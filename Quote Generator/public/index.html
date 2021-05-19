@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/loading-io.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Quote Generator</title>
+  </head>
+  <body>
+      <div id="content-bg"></div>
+    <!-- container for the quote, default to "hidden" to show loader whilst fetching quotes from API, once loaded rmoving this with JS -->
+    <div class="quote__container" id="quote-container" hidden>
+      <!-- Quote -->
+      <div class="quote__text">
+        <span id="quote"
+          ></span
+        >
+      </div>
+      <!-- Author  -->
+      <div class="quote__author">
+        <span id="author"></span>
+      </div>
+      <!-- Buttons (2 left in seperate div and one right) -->
+      <div class="button__container">
+        <!-- 2 buttond left -->
+        <div class="left__btn__container">
+          <button class="twitter__btn" id="twitter" title="Tweet this!">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button class="copy__btn" id="copy" title="Copy this quote!">
+            <i class="far fa-copy"></i>
+          </button>
+          <span id="popup" class="copied__text"
+            >Done<i class="fas fa-check-circle"></i
+          ></span>
+        </div>
+        <!-- 2 buttons left end -->
+
+        <!-- 1 button right -->
+
+        <button class="quote__btn" id="new-quote" title="Generate a new quote!">
+          New Quote
+        </button>
+        <!-- 1 button right end -->
+      </div>
+      <!-- credentails container -->
+    </div>
+    <div class="credentials__container">
+      <h2>{ developed by kez anwar }</h2>
+      <a href="https://github.com/Kezanwar"><i class="fab fa-github"></i></a>
+      <a href=""><i class="fab fa-linkedin"></i></i></a>
+    </div>
+    <div id="welcome">
+      <h1>Random</h1>
+      <h1>Quote</h1>
+      <h1>Generator</h1>
+
+      </div>
+    <!-- credentials container end -->
+    <!-- Loader container-->
+    <div id="loader" class="loadingio-spinner-spinner-4rmz7awdfus"><div class="ldio-wmry3v9dt8">
+<div></div><div></div><div></div><div></div><div></div>
+</div></div>
+<!-- loader container end -->
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
